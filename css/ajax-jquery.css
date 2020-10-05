@@ -1,0 +1,233 @@
+/* BODY SECTION */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+    width: 960px;
+    margin: 0 auto 0 auto;
+    overflow: scroll;
+}
+
+#page {
+    margin: 0 auto 0 auto;
+}
+
+header {
+    display: block;
+    height: 140px;
+    border-bottom: 5px solid #000;
+    margin-bottom: 30px;
+}
+
+h1 {
+    background-image: url(../img/maker-logo.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
+    text-indent: 100%;
+    height: 75px;
+    line-height: 75px;
+    width: 225px;
+    height: 90px;
+    margin: 28px 0 0 0;
+}
+
+h1:hover {
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+    transition: ease-in-out .5s;
+    cursor: pointer;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 2.4em;
+    margin: 0.7em 0 1.7em 0;
+    padding: 0;
+    color: #000;
+    line-height: 1em;
+    letter-spacing: -.06em;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: rgb(125, 37, 37);
+    transition: ease-in-out .5s;
+}
+
+nav {
+    float: right;
+    margin-top: -75px;
+}
+
+a {
+    padding: 50px;
+    margin-right: -50px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: rgb(21, 135, 15);
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+
+a.current {
+    color: rgb(125, 37, 37);
+}
+
+a.current:hover {
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+
+#event {
+    width: 305px;
+    margin-left: 70px;
+    float: left;
+    text-align: center;
+    color: rgb(125, 37, 37);
+}
+
+p {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#event p.p1,
+#event p.p2,
+#event p.p3 {
+    border: none;
+    padding: 30px;
+    text-align: justify;
+    margin-top: -25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+img:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+    transition: ease-in-out .5s;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* Small screen - acts like the app would */
+
+@media only screen and (max-width: 500px) {
+    body {
+        max-width: 480px;
+    }
+    #page {
+        max-width: 480px;
+        margin: 50px 20px 20px 20px;
+        overflow: hidden;
+    }
+    h1 {
+        margin-left: 110px;
+        margin-top: 5px;
+    }
+    h2 {
+        text-align: center;
+    }
+    nav {
+        float: left;
+        margin-left: 30px;
+        margin-top: -65px;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+    body {
+        max-width: 480px;
+    }
+    #page {
+        max-width: 480px;
+        margin: 50px 20px 20px 20px;
+        overflow: hidden;
+    }
+    h1 {
+        margin-left: 110px;
+        margin-top: 5px;
+    }
+    h2 {
+        text-align: center;
+    }
+    nav {
+        float: left;
+        margin-left: 30px;
+        margin-top: -65px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    body {
+        max-width: 480px;
+    }
+    #page {
+        max-width: 480px;
+        margin: 50px 20px 20px 20px;
+        overflow: hidden;
+    }
+    h1 {
+        margin-left: 110px;
+        margin-top: 5px;
+    }
+    h2 {
+        text-align: center;
+    }
+    nav {
+        float: left;
+        margin-left: 30px;
+        margin-top: -65px;
+    }
+}
+
+
+/* Larger screens act like a demo for the app */
+
+@media only screen and (min-width: 960px) {
+    body {
+        max-width: 960px;
+    }
+    #page {
+        max-width: 960px;
+        margin: 20px 20px 20px 20px;
+        overflow: hidden;
+    }
+    h1 {
+        margin-left: 0px;
+    }
+    h2 {
+        text-align: left;
+    }
+    #event {
+        width: 325px;
+        margin-left: -20px;
+        float: left;
+        text-align: center;
+        color: rgb(125, 37, 37);
+    }
+    #event p {
+        border-right: 1px solid #999;
+    }
+    #event:last-child p {
+        border-right: none;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    h1 {
+        background-image: url(../img/maker-logo.png);
+        background-size: 72px 72px;
+    }
+}
